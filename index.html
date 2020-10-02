@@ -10,19 +10,69 @@
         <title></title>
         <meta name="description" content="">
         <meta name="viewport" content="width=device-width, initial-scale=1">
-        <link rel="stylesheet" href="">
-        <link href="https://fonts.googleapis.com/css2?family=Lato:wght@900&display=swap" rel="stylesheet">  
+        <link rel="stylesheet" href="style.css">
+        <link href="https://fonts.googleapis.com/css2?family=Lato:wght@900&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">  
     </head>
     <body>
     <div class="float-container">
         <div class="float-republican">
-            <h1 class="trump">TRUMP</h1>
-            <hr>
+            <div class ="header-republican">
+                <img class = "header-image" src="https://statesboroherald.cdn-anvilcms.net/media/images/2018/05/22/images/GOP-logo.max-640x480.jpg" alt = "republicanLogo">
+                <h1 class="trump">TRUMP</h1>
+                <img class = "header-image header-profile" src="https://pyxis.nymag.com/v1/imgs/e74/5d4/975ef98316de0e2eebf2935b279df37479-27-donald-trump-thumbs-up.rsquare.w700.jpg" alt = "republicanLogo">
+            </div>
+            <div class = "flex-nav">
+                <ul>
+                    <li><a href="https://en.wikipedia.org/wiki/Donald_Trump">About</a></li>
+                    <li><a href="https://www.donaldjtrump.com/">Site</a></li>
+                    <li><a href="https://shop.donaldjtrump.com/">Shop</a></li>
+                    <li><a href="https://secure.winred.com/djt/finance-team-daily-goal?amount=100&utm_source=organic&utm_medium=web&utm_campaign=20200719__home-page-record_na_djt&utm_content=djt_home">Donate</a></li>
+                    <li>
+                        <a href ="https://twitter.com/realDonaldTrump"><i class = "fa fa-twitter"></i></a></li>
+                    <li>
+                        <a href ="https://www.instagram.com/realdonaldtrump/?hl=en"><i class = "fa fa-instagram"></i></a></li>    
+                </ul>
+            </div>
+            <div class="aboutSection">
+                
+            </div>
         </div>
         <div class="float-democrat">
-            <h1 class="biden">BIDEN</h1>
-            <hr>
-        </div>    
+            <div class ="header-democrat">
+                <img class = "header-image header-profile" src="https://cdn.ballotpedia.org/images/0/0b/Biden_Square.png" alt = "democratLogo">
+                <h1 class="biden">BIDEN</h1>
+                <img class = "header-image" src="https://bloximages.newyork1.vip.townnews.com/petoskeynews.com/content/tncms/assets/v3/editorial/a/1a/a1a464ac-4c63-11e3-b8fa-0019bb30f31a/528378423649a.image.jpg" alt = "democratLogo">
+            </div>
+            <div class = "flex-nav">
+                <ul>
+                    <li><a href="https://en.wikipedia.org/wiki/Joe_Biden">About</a></li>
+                    <li><a href="https://joebiden.com/#">Site</a></li>
+                    <li><a href="https://store.joebiden.com/">Shop</a></li>
+                    <li><a href="https://secure.actblue.com/donate/biden2020_fr_web?refcode=web-homepage-nav">Donate</a></li>
+                    <li>
+                        <a href ="https://twitter.com/JoeBiden"><i class = "fa fa-twitter"></i></a></li>
+                    <li>
+                        <a href ="https://www.instagram.com/joebiden/?hl=en"><i class = "fa fa-instagram"></i></a></li>    
+                </ul>
+            </div>
+        </div>
     </div>
+    <div id="voterBox">
+        <h2>WHO WILL YOU VOTE FOR?</h2>
+        <hr>
+        <form class = "ballot" action ="#">
+            <label for = "trump">
+                <input class="candidates" id = "trump" type = "radio" name= "trump-biden">DONALD TRUMP / MICHAEL PENCE 
+            </label>
+            <label for = "biden">
+                <input class="candidates" id = "biden" type = "radio" name= "trump-biden">JOSEPH BIDEN / KAMALA HARRIS 
+            </label>
+            <label for = "other">
+                <input class="candidates" id = "biden" type = "radio" placeholder ="OTHER" name= "trump-biden"> OTHER
+            </label>
+            <button id="submit-button" type = "submit">Submit vote</button>
+        </form>
+    </div>   
     </body>
 </html>
