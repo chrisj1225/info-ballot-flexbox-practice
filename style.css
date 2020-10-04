@@ -61,10 +61,12 @@ h1 {
 
 .trumph1:hover {
     color: red;
+    cursor: pointer;
 }
 
 .bidenh1:hover {
     color: blue;
+    cursor: pointer;
 }
 
 hr {
