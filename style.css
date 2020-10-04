@@ -46,6 +46,7 @@ body {
 .header-image {
     max-width: 10%;
     height: auto;
+    max-height:90px;
 }
 
 .header-profile {
@@ -80,10 +81,15 @@ hr {
     padding: 0;
     display: flex;
     justify-content: space-around;
+    text-decoration: none;
 }
 
 .flex-nav li {
     flex:3 3 auto;
+}
+
+.link {
+    text-decoration: none;
 }
 
 .fa {
@@ -142,8 +148,8 @@ h3 {
     background-color: #F4F0DB;
     text-align: left; 
     width: 30%;
-    padding: 0px;
-    margin: 10px;
+    padding-right: 15px;
+    margin: 5px;
     box-shadow: 0 20px 20px rgba(0,0,0,0.50)
 }
 
